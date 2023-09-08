@@ -19,6 +19,7 @@ const App = () => {
         <input
           type="text"
           className="searchBar"
+          placeholder="Enter the movie name..."
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);

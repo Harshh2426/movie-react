@@ -22,12 +22,12 @@ const MovieDetails = () => {
           <img src={movie.Poster} alt="" />
         </div>
         <div className="rightBox">
-          <h1>{movie.Title}</h1>
-          <h3>Genre: {movie.Genre}</h3>
-          <h3>Cast: {movie.Actors}</h3>
-          <h3>Runtime: {movie.Runtime}</h3>
-          <h3>IMDb Rating: {movie.imdbRating}</h3>
-          <h4>Plot: {movie.Plot}</h4>
+          <h1 className="movieTitle">{movie.Title}</h1>
+          <h3 className="movieGenre">Genre : {movie.Genre}</h3>
+          <h3 className="movieCast">Cast : {movie.Actors}</h3>
+          <h3 className="movieRuntime">Runtime : {movie.Runtime}</h3>
+          <h3 className="movieImdb">IMDb Rating : {movie.imdbRating}</h3>
+          <h4 className="moviePlot">Plot : {movie.Plot}</h4>
         </div>
       </div>
     </div>
