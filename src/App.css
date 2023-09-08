@@ -56,6 +56,7 @@ html {
 .header {
   text-transform: uppercase;
   font-size: 35px;
+  text-align: center;
 }
 .searchBar {
   height: 40px;
@@ -77,6 +78,25 @@ html {
   cursor: pointer;
   font-weight: 900;
   border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+  .searchBar{
+    height: 25px;
+    width: 250px;
+    font-size: 16px;
+    padding-left: 5px;
+  }
+  .searchBtn{
+    height: 25px;
+    padding: 6px;
+  }
+  .header{
+    font-size: 25px;
+  }
 }
 a {
   text-decoration: none;
@@ -182,8 +202,8 @@ img {
     align-items: center;
   }
   .leftBox {
-    width: 40%;
-    height: 42%;
+    width: 55%;
+    height: 65%;
     /* overflow-y: hidden; */
   }
   .rightBox {
@@ -191,15 +211,17 @@ img {
     min-height: 0%;
     height: 55%;
     width: 100%;
+    gap: 2px;
+    padding-right: 5px;
   }
   .movieTitle {
-    font-size: 25px;
+    font-size: 22px;
   }
   .movieGenre,
   .movieCast,
   .movieRuntime,
   .movieImdb,
   .moviePlot {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
